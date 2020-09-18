@@ -1,0 +1,1 @@
+const easyBank = new EasyBank();

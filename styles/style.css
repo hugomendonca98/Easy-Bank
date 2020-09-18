@@ -1,0 +1,355 @@
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --lime-dark: hsl(137, 82%, 41%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --body-font-size: 18px;
+  /* Weights: 300, 400 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: calc(100% - 50px);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* MENU NAVEGAÇÃO PRINCIPAL*/
+
+nav {
+  background-color: var(--white);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 1100px;
+}
+
+nav > div.mobile_nav > div.menu-icon {
+  display: none;
+}
+
+div.menu {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.menu > ul {
+  display: flex;
+}
+
+div.menu > ul > a {
+  list-style: none;
+  padding: 25px 5px 25px 5px;
+  margin: 0px 10px 0px 10px;
+  text-decoration: none;
+  transition: border 200ms;
+}
+
+div.menu > ul > a:hover {
+  border-bottom: 3px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    var(--lime-green) 35%,
+    var(--bright-cyan) 100%
+  );
+  border-image-slice: 1;
+}
+
+div.menu > ul > a:hover > li {
+  transition: color 300ms;
+  color: var(--dark-blue);
+}
+
+div.menu > ul > a > li {
+  color: var(--grayish-blue);
+}
+
+button.btn-primary {
+  background: linear-gradient(
+    90deg,
+    var(--lime-green) 35%,
+    var(--bright-cyan) 100%
+  );
+  padding: 10px 40px 10px 40px;
+  color: var(--white);
+  border-radius: 25px;
+  font-size: 17px;
+}
+
+button.btn-primary:hover {
+  opacity: 0.7;
+  transition: opacity 300ms;
+}
+
+/* INTRODUÇÃO DO SITE/BANNER */
+
+header {
+  background-color: var(--very-light-gray);
+}
+
+section.intro {
+  display: flex;
+  justify-content: center;
+  background-color: var(--very-light-gray);
+  height: 690px;
+  position: relative;
+}
+
+div.intro-text {
+  font-family: "Public Sans", sans-serif;
+  width: 400px;
+  margin: auto;
+  margin-top: 170px;
+}
+
+div.intro-text > h2 {
+  font-weight: 500;
+  font-size: 50px;
+  color: var(--dark-blue);
+}
+
+div.intro-text > p {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 20px 5px 20px 5px;
+  color: var(--grayish-blue);
+  line-height: 1.5;
+}
+
+div.intro-banner {
+  background-image: url("../images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: -270px;
+  background-position-x: -30px;
+}
+
+div.intro-mockup {
+  overflow-x: hidden;
+}
+
+div.intro-mockup > img {
+  position: relative;
+  top: -120px;
+  right: -130px;
+}
+
+/*@media (min-width: 2000px) {
+  div.intro-text {
+    margin-left: 500px;
+  }
+  nav {
+    width: calc(100% - 50px);
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}*/
+
+/* SECTION DE FUNÇÕES DO SITE */
+
+section.services {
+  background-color: var(--light-grayish-blue);
+  padding-bottom: 80px;
+}
+
+div.service-text {
+  padding-top: 150px;
+  font-family: "Public Sans", sans-serif;
+  text-align: justify;
+}
+
+div.service-text > h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--dark-blue);
+}
+
+div.service-text > p {
+  color: var(--grayish-blue);
+  width: 600px;
+  line-height: 1.5;
+}
+
+div.service-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+div.card-service {
+  width: 280px;
+  font-family: "Public Sans", sans-serif;
+  margin: 10px;
+}
+
+div.card-service > p {
+  color: var(--grayish-blue);
+}
+
+div.card-service > h2 {
+  margin: 30px 0;
+  color: var(--dark-blue);
+  font-weight: 400;
+}
+
+/*SEÇÃO DE ARTIGOS NOVOS*/
+
+section.articles {
+  background-color: var(--very-light-gray);
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+section.articles > div.container > h2 {
+  color: var(--dark-blue);
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Public Sans", sans-serif;
+  padding: 20px 10px;
+}
+
+div.articles-cards {
+  display: flex;
+  justify-content: justify;
+}
+
+div.card-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  font-family: "Public Sans", sans-serif;
+  margin: 0px 10px;
+  background-color: var(--white);
+}
+
+div.card-articles > img {
+  width: 230px;
+  height: 180px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+div.article-text {
+  padding: 20px 20px;
+}
+
+div.article-text > span {
+  color: var(--grayish-blue);
+  font-weight: 500;
+  text-align: justify;
+  font-size: 14px;
+}
+
+div.article-text > a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  transition: 400ms;
+}
+
+div.article-text > a:hover {
+  color: var(--lime-dark);
+}
+
+div.article-text > a > h2 {
+  font-size: 17px;
+  margin: 10px 0px;
+}
+
+div.article-text > p {
+  font-size: 14px;
+  color: var(--grayish-blue);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--dark-blue);
+  font-family: "Public Sans", sans-serif;
+}
+
+footer > div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div.container > div {
+  display: flex;
+  align-items: center;
+}
+
+footer > div.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+div.social-icons {
+  margin-top: 40px;
+}
+
+div.social-icons > a {
+  margin: 0px 5px;
+}
+
+div.social-icons > a > svg:hover > path{
+  fill: var(--lime-dark);
+  transition: 400ms;
+}
+
+div.footer-nav {
+  display: flex;
+  margin-left: 50px;
+}
+
+div.footer-nav > div.col-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 45px;
+}
+
+div.col-footer > a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+  margin: 5px 0px;
+}
+
+div.col-footer > a:hover {
+  color: var(--lime-dark);
+  transition: 400ms;
+}
+
+div.btn-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+div.btn-footer > p {
+  color: var(--grayish-blue);
+  font-family: "Public Sans", sans-serif;
+  margin-top: 20px;
+}
+
+

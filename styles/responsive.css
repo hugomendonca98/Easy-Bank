@@ -1,0 +1,328 @@
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --lime-dark: hsl(137, 82%, 41%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --body-font-size: 18px;
+  /* Weights: 300, 400 */
+}
+
+
+
+@media (max-width: 1050px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 2000px) {
+  div.intro-text {
+    margin-left: 500px;
+  }
+  nav {
+    width: calc(100% - 50px);
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 1110px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 1200px) {
+  
+  .container{
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0px 50px;
+    width: auto;
+    z-index: 1000;
+  }
+
+  div.menu {
+    display: none;
+  }
+
+  div.menu > ul {
+    background-color: white;
+    width: 80%;
+    padding: 20px 0px;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 77px 89px -54px rgba(45,49,77,1);
+    -moz-box-shadow: 3px 77px 89px -54px rgba(45,49,77,1);
+    box-shadow: 3px 77px 89px -54px rgba(45,49,77,1);
+  }
+
+  .toggle-menu {
+    display: block !important;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .toggle-icon {
+    background-image: url("../images/icon-close.svg") !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px !important;
+  }
+
+  nav > div.menu > ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav > div.menu > ul > a > li {
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  nav > div.menu > ul > a > li:hover {
+    color:var(--grayish-blue);
+    border-bottom: none;
+  }
+
+  nav > div.menu > ul > a {
+    padding: 10px 5px 10px 5px;
+  }
+
+  nav > div.menu > ul > a:hover {
+    border-bottom: none;
+  }
+
+  nav.nav-menu > button {
+    display: none;
+  }
+
+  div.logo > img {
+    width: 100px;
+  }
+
+  nav > div.mobile_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+  }
+
+  nav > div.mobile_nav > div.menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transition: ease-in-out 200ms;
+  }
+
+  div.mobile_nav > div.menu-icon > img {
+    width: 150px;
+  }
+
+  section.intro {
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  div.intro-text > button.btn-primary {
+    margin-bottom: 40px;
+  }
+
+  div.intro-mockup > img {
+    position: relative;
+    top: -180px;
+    right: 0px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.intro-banner {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position-x: center;
+    background-position-y: -270px;
+    background-size: 800px;
+    overflow: hidden;
+  }
+
+  div.intro-text {
+    width: 70%;
+    margin: auto;
+    margin-top: -180px;
+    text-align: center;
+  }
+
+  div.intro-text > h2 {
+    font-size: 30px;
+  }
+
+  div.intro-text > p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  section.articles > div.container > h2 {
+    text-align: center;
+  }
+
+  div.service-text > p {
+    width: 80%;
+  }
+
+  div.service-text > h2, div.service-text > p {
+    margin: auto;
+    text-align: center;
+  }
+
+  div.service-cards {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  div.card-service {
+    margin-bottom: 30px;
+  }
+
+  div.articles-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  div.card-articles {
+    margin-bottom: 20px;
+  }
+
+  div.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  div.footer-logo > img {
+    width: 120px;
+    margin: auto;
+  }
+
+  div.social-icons {
+    margin-top: 20px;
+  }
+
+  footer > div.container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  footer > div.container > div {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  div.footer-nav {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin: 20px 0;
+  }
+
+  div.footer-nav > div.col-footer {
+    margin: 0;
+    text-align: center;
+  }
+
+  div.btn-footer > p {
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media (min-width: 441px) and (max-width: 830px){
+  div.intro-banner {
+    background-size: 440px;
+    background-position-y: -100px;
+  }
+
+  div.intro-mockup > img {
+    width: 350px;
+    top: -125px;
+  }
+
+  div.intro-text {
+    margin-top: -100px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 200px) and (max-width: 440px) {
+  
+  div.intro-mockup > img {
+    width: 300px;
+    top: -107px;
+  }
+
+  div.intro-banner {
+    background-image: url("../images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-position-y: -80px;
+  }
+  
+  div.intro-text {
+    margin-top: -50px;
+  }
+  
+}
