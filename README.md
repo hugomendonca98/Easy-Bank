@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/logo.svg" />
+    <img alt="EasyBank" src=".github/logo.svg" />
 </h1>
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/desktop.jpg" />
+    <img alt="EasyBank" src=".github/desktop.jpg" />
 </h1>
 
 <br>
