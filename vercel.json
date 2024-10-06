@@ -1,5 +1,0 @@
-{
-  "build": {
-    "command": "apt-get install -y libpng-dev libimagequant-dev && npm install"
-  }
-}
