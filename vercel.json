@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "APT_PACKAGES": "libpng-dev libimagequant-dev"
+    }
+  }
+}
